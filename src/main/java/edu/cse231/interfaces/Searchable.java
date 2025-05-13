@@ -8,6 +8,9 @@ package edu.cse231.interfaces;
  *
  * @author Admin
  */
-public interface Searchable {
+public interface Searchable<T> {
     
+    T searchById(String id);
+    T searchByName(String nameQuery);
 }
+
