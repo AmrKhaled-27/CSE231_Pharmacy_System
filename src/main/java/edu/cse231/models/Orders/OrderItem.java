@@ -2,11 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package edu.cse231.models;
+package edu.cse231.models.Orders;
 
+import edu.cse231.models.Items.Item;
 
 public class OrderItem {
-    private Item item; 
+
+    private Item item;
     private int quantity;
 
     public OrderItem(Item item, int quantity) {
@@ -27,6 +29,6 @@ public class OrderItem {
     }
 
     public double getSubtotal() {
-        return item.getPrice() * quantity; 
+        return item.getPrice() * quantity;
     }
 }
